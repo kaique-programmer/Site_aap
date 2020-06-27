@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="packageBootstrap/node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+  <!-- Início Barra de Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+    <div class="container">
+
+      <a href="login.html" class="navbar-brand h1 mb-0">Login</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"><i class="fas fa-home mr-1"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"><i class="far fa-address-book mr-1"></i>Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html" class="nav-link"><i class="far fa-building mr-1"></i>Sobre</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">
+              Social
+            </a>
+            <div class="dropdown-menu">
+              <a href="https://www.facebook.com/" class="dropdown-item"><i
+                  class="fab fa-facebook-square mr-1"></i>Facebook</a>
+              <a href="https://www.twitter.com" class="dropdown-item"><i
+                  class="fab fa-twitter-square mr-1"></i>Twitter</a>
+              <a href="https://www.instagram.com" class="dropdown-item"><i
+                  class="fab fa-instagram-square mr-1"></i>Instagram</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <form class="form-inline">
+          <input type="text" class="form-control ml-4 mr-2" placeholder="Buscar...">
+          <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Fim Barra de Menu -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-12 text-center my-5">
+
+        <h1 class="display-4"><i class="far fa-paper-plane text-info mr-1"></i>Envie sugestões de conteúdo</h1>
+
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center mb-5">
+
+      <div class="col-sm-12 col-md-10 col-lg-8">
+
+        <form method="GET">
+
+          <div class="form-row">
+
+            <div class="form-group col-sm-6">
+
+              <label for="inputNome"><i class="fas fa-signature mr-1"></i>Nome:</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Digite o nome">
+
+            </div>
+            <div class="form-group col-sm-6">
+
+              <label for="inputSobrenome"><i class="fas fa-signature mr-1"></i>Sobrenome:</label>
+              <input type="text" class="form-control" id="inputSobrenome" placeholder="Digite o sobrenome">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-4">
+
+              <label for="inputCep"><i class="fas fa-sort-numeric-up-alt mr-1"></i>CEP:</label>
+              <input type="text" class="form-control" id="inputCep" placeholder="Digite o cep">
+
+            </div>
+            <div class="form-group col-sm-8">
+
+              <label for="inputEndereco"><i class="fas fa-map-marker-alt mr-1"></i>Endereço:</label>
+              <input type="text" class="form-control" id="inputEndereco" placeholder="Digite o Endereço">
+
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="form-group col-sm-6">
+
+              <label for="inputCidade"><i class="fas fa-city mr-1"></i>Cidade:</label>
+              <input type="text" class="form-control" id="inputCidade" placeholder="Digite a cidade">
+
+            </div>
+
+            <div class="form-group col-sm-3">
+
+              <label for="inputNumero"><i class="fas fa-sort-numeric-up-alt mr-1"></i>Número:</label>
+              <input type="text" class="form-control" id="inputNumero" placeholder="Digite o número">
+
+            </div>
+
+            <div class="form-group col-sm-3">
+
+              <label for="inputEstado"><i class="far fa-flag mr-1"></i>Estado:</label>
+              <select id="  " class="form-control">
+                <optgroup label="Sudeste">
+                  <option selected>Escolha</option>
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="MG">MG</option>
+                  <option value="ES">ES</option>
+                </optgroup>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="form-group col-sm-12">
+
+              <div class="form-check">
+
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">Desejo receber mais novidades por e-mail
+                </label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="col-sm-12">
+              <button type="submit" onclick="validationForm()" class="btn btn-info">Enviar</button>
+              <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right"
+                data-trigger="focus" title="Formulário de preenchimento" 
+                data-content="O formulário acima tem o objetivo de cadastrar informações relativas ao usuário, posteriormente para melhorias!">Ajuda</a>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-12 mb-2">
+        <hr>
+      </div>
+
+      <div class="col-sm-4">
+
+        <h3>Curso</h3>
+        <p class="text-justify">O curso aborda disciplinas das áreas de informática e gestão, que têm como base a
+          matemática.
+          Dentro de computação, o estudante aprende linguagem de programação, desenvolvimento de
+          softwares e implementação de sistema de banco de dados, entre outros conteúdos.</p>
+
+      </div>
+      <div class="col-sm-4">
+
+        <h3>Menu</h3>
+        <div class="list-group text-center">
+          <a href="index.html" class="list-group-item list-group-action list-group-item-primary">Home</a>
+          <a href="#" class="list-group-item list-group-action list-group-item-danger">Contato</a>
+          <a href="#" class="list-group-item list-group-action list-group-item-warning">Sobre</a>
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+
+        <h3>Social</h3>
+        <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+          <a href="https://www.facebook.com/" target="blank" class="btn btn-outline-primary"><i
+              class="fab fa-facebook-square mr-1"></i>Facebook</a>
+          <a href="https://www.twitter.com" target="blank" class="btn btn-outline-info"><i
+              class="fab fa-twitter-square mr-1"></i>Twitter</a>
+          <a href="https://www.instagram.com" target="blank" class="btn btn-outline-warning"><i
+              class="fab fa-instagram-square mr-1"></i>Instagram</a>
+        </div>
+
+      </div>
+
+      <div class="col-12 mt-5">
+
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">
+            O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu
+            trabalho.
+          </p>
+          <footer class="blockquote-footer">Biz Stone <cite title="Título"></cite>Fundador do Twitter</footer>
+        </blockquote>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Optional Javascript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap Js-->
+  <script src="packageBootstrap/node_modules/jquery/dist/jquery.js"></script>
+  <script src="packageBootstrap/node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="packageBootstrap/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/validationAbout.js"></script>
+  <script src="js/buscaCep.js"></script>
+  <!-- Aciona o popover -->
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+</body>
+
+</html>
